@@ -63,7 +63,9 @@ class ChatActivity : AppCompatActivity() {
             recyleview.layoutManager =linearLayoutManager
 
             recyleview.adapter = chatAdapter
-            recyleview.scrollToPosition(chatAdapter.itemCount-1)
+            recyleview.postDelayed({
+                recyleview.scrollToPosition(chatAdapter.itemCount - 1)
+            }, 1000)
             chatAdapter.notifyDataSetChanged()
 
             recyleview.smoothScrollToPosition(recyleview.getAdapter()?.getItemCount()!!);
@@ -79,7 +81,11 @@ class ChatActivity : AppCompatActivity() {
                             .child("message").push()
                             .setValue(chat)
                     }
-                recyleview.scrollToPosition(chatAdapter.itemCount -1)
+                recyleview.postDelayed({
+                    recyleview.scrollToPosition(chatAdapter.itemCount - 1)
+                }, 1000)
+
+             //   recyleview.scrollToPosition(chatAdapter.itemCount -1)
                 sendtext.setText("")
             }
 
