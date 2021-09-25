@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_margin="5dp"
+        android:background="@drawable/layour_round"
+        android:layout_height="wrap_content"
+        >
+
+        <TextView
+            android:id="@+id/recievetv"
+            android:padding="10dp"
+            android:textColor="@color/black"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tviand  fan af fa  aada"
+            android:textSize="18sp" />
+    </RelativeLayout>
+
+</RelativeLayout>
